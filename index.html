@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zylo - Create. Play. Share.</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #1c1c1c;
+      color: white;
+    }
+
+    /* 🔹 Navbar */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #1c1c1c;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #333;
+    }
+    nav .logo {
+      font-size: 22px;
+      font-weight: bold;
+      background: linear-gradient(90deg, #00F0FF, #9B59B6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+    nav ul li {
+      display: inline;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #ccc;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+    nav ul li a:hover {
+      color: #00F0FF;
+    }
+
+    /* 🔹 Hero Section */
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .hero h1 {
+      font-size: 60px;
+      margin: 0;
+      background: linear-gradient(90deg, #00F0FF, #9B59B6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero p {
+      font-size: 20px;
+      margin-top: 10px;
+      color: #ddd;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 15px 30px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #fff;
+      background: linear-gradient(90deg, #00F0FF, #9B59B6);
+      border-radius: 8px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      opacity: 0.8;
+    }
+
+    /* 🔹 Sections */
+    section {
+      padding: 80px 20px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+    section h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      background: linear-gradient(90deg, #00F0FF, #9B59B6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    section p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #ccc;
+    }
+
+    /* 🔹 Features */
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 40px;
+    }
+    .feature-card {
+      background: #2a2a2a;
+      padding: 30px;
+      border-radius: 12px;
+      width: 280px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s;
+    }
+    .feature-card:hover {
+      transform: translateY(-5px);
+    }
+    .feature-card h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+      color: #00F0FF;
+    }
+    .feature-card p {
+      font-size: 16px;
+      color: #bbb;
+    }
+
+    /* 🔹 Footer */
+    footer {
+      margin-top: 100px;
+      padding: 20px;
+      font-size: 14px;
+      color: #ccc;
+      text-align: center;
+      border-top: 1px solid #333;
+    }
+    footer a {
+      color: #00F0FF;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔹 Navbar -->
+  <nav>
+    <div class="logo">Zylo</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- 🔹 Hero Section -->
+  <section class="hero">
+    <h1>Create. Play. Share.</h1>
+    <p>Welcome to Zylo — the future of game creation.</p>
+    <a href="#" class="btn">Start Creating</a>
+  </section>
+
+  <!-- 🔹 About Zylo -->
+  <section id="about">
+    <h2>About Zylo</h2>
+    <p>
+      Zylo is a next-generation platform that empowers anyone to design and play their own games.
+      Whether you’re a beginner experimenting with ideas or a creator sharing your worlds, Zylo
+      makes game creation simple, fun, and accessible for everyone.
+    </p>
+  </section>
+
+  <!-- 🔹 Features -->
+  <section id="features">
+    <h2>Features</h2>
+    <div class="features">
+      <div class="feature-card">
+        <h3>🎮 Drag & Drop Editor</h3>
+        <p>No coding required — build games by snapping blocks together.</p>
+      </div>
+      <div class="feature-card">
+        <h3>⚡ Instant Play</h3>
+        <p>Test your game instantly with one click. No waiting, just fun.</p>
+      </div>
+      <div class="feature-card">
+        <h3>🌍 Share with Friends</h3>
+        <p>Publish your creations and let others play, remix, and enjoy.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔹 Contact -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>
+      Have questions or ideas? Reach out to us at  
+      <a href="mailto:zylo.studiohq@gmail.com">zylo.studiohq@gmail.com</a>
+    </p>
+  </section>
+
+  <!-- 🔹 Footer -->
+  <footer>
+    © 2025 Zylo Studio HQ | Contact: <a href="mailto:zylo.studiohq@gmail.com">zylo.studiohq@gmail.com</a>
+  </footer>
+
+</body>
+</html>
